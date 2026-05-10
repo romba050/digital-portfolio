@@ -25,7 +25,7 @@ function SkillsSection() {
   ];
 
   return (
-    <section className="skills-section">
+    <section id="skills" className="section skills-section">
       <div className="section-container">
         <h2 className="section-title">Skills</h2>
         <div className="skills-grid">

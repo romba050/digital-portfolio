@@ -222,15 +222,60 @@
 /* STAR WRAP */
 
 .star-wrap {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px 0;
   width: 100%;
+  min-height: 400px;
 }
 
 .star-svg {
   animation: hueShift 6s linear infinite;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-header {
+  position: absolute;
+  background: #FF6B00;
+  color: #fff;
+  font-family: 'Barlow Condensed', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 32px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-header:hover {
+  background: #ff8533;
+  transform: scale(1.05);
+}
+
+.nav-top-left {
+  top: 40px;
+  left: 50px;
+}
+
+.nav-top-right {
+  top: 40px;
+  right: 50px;
+}
+
+.nav-bottom-left {
+  bottom: 40px;
+  left: 50px;
+}
+
+.nav-bottom-right {
+  bottom: 40px;
+  right: 50px;
 }
 
 /* NETWORK SECTION */
@@ -423,6 +468,31 @@
     padding: 0 24px;
     font-size: 13px;
   }
+
+  .nav-header {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+
+  .nav-top-left,
+  .nav-top-right {
+    top: 20px;
+  }
+
+  .nav-bottom-left,
+  .nav-bottom-right {
+    bottom: 20px;
+  }
+
+  .nav-top-left,
+  .nav-bottom-left {
+    left: 20px;
+  }
+
+  .nav-top-right,
+  .nav-bottom-right {
+    right: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -474,5 +544,35 @@
 
   .vert-barcode span {
     height: 38px;
+  }
+
+  .nav-header {
+    font-size: 11px;
+    padding: 10px 16px;
+    letter-spacing: 1px;
+  }
+
+  .nav-top-left,
+  .nav-top-right {
+    top: 10px;
+  }
+
+  .nav-bottom-left,
+  .nav-bottom-right {
+    bottom: 10px;
+  }
+
+  .nav-top-left,
+  .nav-bottom-left {
+    left: 10px;
+  }
+
+  .nav-top-right,
+  .nav-bottom-right {
+    right: 10px;
+  }
+
+  .star-wrap {
+    min-height: 350px;
   }
 }

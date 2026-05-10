@@ -35,9 +35,9 @@ function ExperienceSection() {
   ];
 
   return (
-    <section className="experience-section">
+    <section id="experience" className="section experience-section">
       <div className="section-container">
-        <h2 className="section-title">Experience & Qualifications</h2>
+        <h2 id="work-experience" className="section-title">Experience & Qualifications</h2>
         <div className="qualifications-list">
           {qualifications.map((qual, index) => (
             <div key={index} className="qualification-item">

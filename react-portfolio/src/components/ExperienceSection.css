@@ -1,8 +1,7 @@
 .experience-section {
-  min-height: 100vh;
-  padding: 80px 40px;
   background: linear-gradient(135deg, #1a1a2e 0%, #0f0f1e 100%);
   color: #00ff88;
+  padding: 40px;
 }
 
 .qualifications-list {
@@ -104,7 +103,7 @@
 
 @media (max-width: 768px) {
   .experience-section {
-    padding: 60px 20px;
+    padding: 24px;
   }
 
   .work-title {

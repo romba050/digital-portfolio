@@ -1,8 +1,7 @@
 .projects-section {
-  min-height: 100vh;
-  padding: 80px 40px;
   background: linear-gradient(135deg, #000000 0%, #1a1a2e 100%);
   color: #00ff88;
+  padding: 40px;
 }
 
 .section-container {
@@ -69,7 +68,7 @@
 
 @media (max-width: 768px) {
   .projects-section {
-    padding: 60px 20px;
+    padding: 24px;
   }
 
   .section-title {

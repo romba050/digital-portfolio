@@ -37,7 +37,7 @@ function ProjectsSection() {
   ];
 
   return (
-    <section className="projects-section">
+    <section id="projects" className="section projects-section">
       <div className="section-container">
         <h2 className="section-title">Projects & WebApps</h2>
         <div className="projects-grid">

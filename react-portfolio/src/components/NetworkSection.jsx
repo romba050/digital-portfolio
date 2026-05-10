@@ -1,10 +1,43 @@
 import Star from './Star';
 
 function NetworkSection() {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="section network-section">
       <div className="network-content">
-        <Star />
+        <div className="star-wrap">
+          <button
+            className="nav-header nav-top-left"
+            onClick={() => scrollToSection('projects')}
+          >
+            Projects & WebApps
+          </button>
+          <button
+            className="nav-header nav-top-right"
+            onClick={() => scrollToSection('work-experience')}
+          >
+            Work Experience
+          </button>
+          <Star />
+          <button
+            className="nav-header nav-bottom-left"
+            onClick={() => scrollToSection('skills')}
+          >
+            Skills
+          </button>
+          <button
+            className="nav-header nav-bottom-right"
+            onClick={() => scrollToSection('experience')}
+          >
+            Experience & Qualifications
+          </button>
+        </div>
 
         <div className="bottom-row">
           <div className="globe-box">
