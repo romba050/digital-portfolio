@@ -26,21 +26,27 @@ function Star() {
       <path d="M10,130 C68,125 95,85 130,130 C95,175 68,135 10,130 Z"   fill="url(#sg1)" opacity="0.95"/>
       <path d="M250,130 C192,135 165,175 130,130 C165,85 192,125 250,130 Z" fill="url(#sg2)" opacity="0.95"/>
 
-      {/* Diagonal 4 points (NE, SE, SW, NW) - rotated 45 degrees */}
-      {/* <path d="M215,45 C178,80 165,123 130,130 C123,95 80,78 45,45 C80,48 123,37 130,10 C137,37 180,48 215,45 Z" fill="url(#sg2)" opacity="0.95"/>
-      <path d="M215,215 C180,212 137,223 130,250 C123,223 80,212 45,215 C78,180 91,137 130,130 C137,165 180,182 215,215 Z" fill="url(#sg1)" opacity="0.95"/>
-      <path d="M45,215 C48,180 37,137 10,130 C37,123 48,80 45,45 C80,78 123,91 130,130 C95,137 82,180 45,215 Z" fill="url(#sg2)" opacity="0.95"/>
-      <path d="M215,45 C212,80 223,123 250,130 C223,137 212,180 215,215 C180,182 137,169 130,130 C165,123 178,80 215,45 Z" fill="url(#sg1)" opacity="0.95"/> */}
+      {/* Diagonal 4 points (NE, SE, SW, NW) */}
+      <path d="M215,45 C172,72 162,112 130,130 C112,98 132,88 215,45 Z"  fill="url(#sg2)" opacity="0.85"/>
+      <path d="M215,215 C172,188 162,148 130,130 C112,162 132,172 215,215 Z" fill="url(#sg1)" opacity="0.85"/>
+      <path d="M45,215 C88,188 98,148 130,130 C148,162 128,172 45,215 Z"  fill="url(#sg2)" opacity="0.85"/>
+      <path d="M45,45 C88,72 98,112 130,130 C148,98 128,88 45,45 Z"   fill="url(#sg1)" opacity="0.85"/>
 
       {/* Shine effects */}
       <path d="M130,10 C135,68 175,95 130,130 C85,95 125,68 130,10 Z"   fill="url(#sshine)" opacity="0.65"/>
       <path d="M10,130 C68,125 95,85 130,130 C95,175 68,135 10,130 Z"   fill="url(#sshine)" opacity="0.35"/>
+      <path d="M215,45 C172,72 162,112 130,130 C112,98 132,88 215,45 Z"  fill="url(#sshine)" opacity="0.45"/>
+      <path d="M45,45 C88,72 98,112 130,130 C148,98 128,88 45,45 Z"   fill="url(#sshine)" opacity="0.45"/>
 
       {/* Stroke outlines */}
       <path d="M130,10 C135,68 175,95 130,130 C85,95 125,68 130,10 Z"   fill="none" stroke="#ffffff" strokeWidth="0.5" opacity="0.25"/>
       <path d="M130,250 C125,192 85,165 130,130 C175,165 135,192 130,250 Z" fill="none" stroke="#9B00FF" strokeWidth="0.5" opacity="0.25"/>
       <path d="M10,130 C68,125 95,85 130,130 C95,175 68,135 10,130 Z"   fill="none" stroke="#FFE500" strokeWidth="0.5" opacity="0.25"/>
       <path d="M250,130 C192,135 165,175 130,130 C165,85 192,125 250,130 Z" fill="none" stroke="#00FF94" strokeWidth="0.5" opacity="0.25"/>
+      <path d="M215,45 C172,72 162,112 130,130 C112,98 132,88 215,45 Z"  fill="none" stroke="#00C9FF" strokeWidth="0.5" opacity="0.25"/>
+      <path d="M215,215 C172,188 162,148 130,130 C112,162 132,172 215,215 Z" fill="none" stroke="#f87a21" strokeWidth="0.5" opacity="0.25"/>
+      <path d="M45,215 C88,188 98,148 130,130 C148,162 128,172 45,215 Z"  fill="none" stroke="#FF3CAC" strokeWidth="0.5" opacity="0.25"/>
+      <path d="M45,45 C88,72 98,112 130,130 C148,98 128,88 45,45 Z"   fill="none" stroke="#7B2FFF" strokeWidth="0.5" opacity="0.25"/>
     </svg>
   );
 }
