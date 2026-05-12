@@ -18,7 +18,7 @@
 }
 
 .hero-section {
-  background: #F5F0E8;
+  background: #FDF4DA;
   padding: 40px;
 }
 
@@ -246,16 +246,17 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding: 16px 32px;
+  padding: 12px 28px;
   border: none;
+  border-radius: 999px;
   cursor: pointer;
   transition: all 0.3s ease;
   white-space: nowrap;
+  z-index: 10;
 }
 
 .nav-header:hover {
-  background: #ff8533;
-  transform: scale(1.05);
+  opacity: 0.85;
 }
 
 .nav-top-left {
@@ -334,7 +335,7 @@
 .pill-link {
   display: inline-flex;
   align-items: center;
-  background: #FF6B00;
+  background: #49D9FE;
   border-radius: 999px;
   height: 40px;
   padding: 0 28px;

@@ -1,4 +1,4 @@
-import './SkillsSection.css';
+import './Section.css';
 
 function SkillsSection() {
   const skills = [
@@ -25,7 +25,7 @@ function SkillsSection() {
   ];
 
   return (
-    <section id="skills" className="section skills-section">
+    <section id="skills" className="section common-section">
       <div className="section-container">
         <h2 className="section-title">Skills</h2>
         <div className="skills-grid">

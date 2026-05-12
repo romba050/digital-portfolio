@@ -1,4 +1,4 @@
-import './ProjectsSection.css';
+import './Section.css';
 
 function ProjectsSection() {
   const projects = [
@@ -37,7 +37,7 @@ function ProjectsSection() {
   ];
 
   return (
-    <section id="projects" className="section projects-section">
+    <section id="projects" className="section common-section">
       <div className="section-container">
         <h2 className="section-title">Projects & WebApps</h2>
         <div className="projects-grid">

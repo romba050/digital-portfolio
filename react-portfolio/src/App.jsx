@@ -2,7 +2,8 @@ import HeroSection from './components/HeroSection';
 import NetworkSection from './components/NetworkSection';
 import ProjectsSection from './components/ProjectsSection';
 import SkillsSection from './components/SkillsSection';
-import ExperienceSection from './components/ExperienceSection';
+import QualificationsSection from './components/QualificationsSection';
+import WorkExpSection from './components/WorkExpSection';
 import './App.css';
 
 function App() {
@@ -11,8 +12,9 @@ function App() {
       <HeroSection />
       <NetworkSection />
       <ProjectsSection />
+      <WorkExpSection />
       <SkillsSection />
-      <ExperienceSection />
+      <QualificationsSection />
     </div>
   );
 }

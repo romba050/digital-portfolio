@@ -33,7 +33,7 @@ function NetworkSection() {
           </button>
           <button
             className="nav-header nav-bottom-right"
-            onClick={() => scrollToSection('experience')}
+            onClick={() => scrollToSection('qualifications')}
           >
             Experience & Qualifications
           </button>
