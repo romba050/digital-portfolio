@@ -1,12 +1,15 @@
 # README
 
-Navigate to the react-portfolio directory and run:
-
 ```bash
 npm run dev
 ```
 
 This will start the Vite development server, typically at http://localhost:5173.
+
+```bash
+# Free up occupied port with:
+lsof -ti :5173 | xargs kill -9
+```
 
 # React + Vite
 
