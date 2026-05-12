@@ -1,5 +1,5 @@
 import HeroSection from './components/HeroSection';
-import NetworkSection from './components/NetworkSection';
+// import NetworkSection from './components/NetworkSection';
 import ProjectsSection from './components/ProjectsSection';
 import SkillsSection from './components/SkillsSection';
 import QualificationsSection from './components/QualificationsSection';
@@ -10,7 +10,8 @@ function App() {
   return (
     <div className="scroll-container">
       <HeroSection />
-      <NetworkSection />
+      {/* NetworkSection now integrated into HeroSection */}
+      {/* <NetworkSection /> */}
       <ProjectsSection />
       <WorkExpSection />
       <SkillsSection />
