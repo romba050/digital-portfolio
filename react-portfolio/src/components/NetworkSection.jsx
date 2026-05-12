@@ -47,9 +47,9 @@ function NetworkSection() {
               <ellipse cx="40" cy="40" rx="16" ry="32" stroke="#888" strokeWidth="0.8"/>
               <line x1="8"  y1="40" x2="72" y2="40" stroke="#888" strokeWidth="0.8"/>
               <line x1="40" y1="8"  x2="40" y2="72" stroke="#888" strokeWidth="0.8"/>
-              <ellipse cx="40" cy="40" rx="18" ry="9" stroke="#FF6B00" strokeWidth="1.2"/>
-              <circle cx="40" cy="40" r="5" stroke="#FF6B00" strokeWidth="1"/>
-              <circle cx="40" cy="40" r="2" fill="#FF6B00"/>
+              <ellipse cx="40" cy="40" rx="18" ry="9" stroke="#f87a21" strokeWidth="1.2"/>
+              <circle cx="40" cy="40" r="5" stroke="#f87a21" strokeWidth="1"/>
+              <circle cx="40" cy="40" r="2" fill="#f87a21"/>
             </svg>
             <div className="globe-label">Network</div>
           </div>

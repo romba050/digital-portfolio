@@ -137,7 +137,7 @@ body {
 .pill {
   display: inline-flex;
   align-items: center;
-  background: #FF6B00;
+  background: #f87a21;
   border-radius: 999px;
   height: 40px;
   overflow: hidden;
@@ -305,7 +305,7 @@ body {
 .pill-link {
   display: inline-flex;
   align-items: center;
-  background: #FF6B00;
+  background: #f87a21;
   border-radius: 999px;
   height: 40px;
   padding: 0 28px;
@@ -353,7 +353,7 @@ body {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  border: 0.8px solid #FF6B00;
+  border: 0.8px solid #f87a21;
   margin: 0 auto;
 }
 

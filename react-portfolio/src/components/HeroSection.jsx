@@ -72,13 +72,13 @@ function HeroSection() {
             className="nav-header nav-top-left"
             onClick={() => scrollToSection('projects')}
           >
-            Projects & WebApps
+            {"Projects &\nWebApps"}
           </button>
           <button
             className="nav-header nav-top-right"
             onClick={() => scrollToSection('work-experience')}
           >
-            Work Experience
+            {"Work\nExperience"}
           </button>
           <Star />
           <button
@@ -91,7 +91,7 @@ function HeroSection() {
             className="nav-header nav-bottom-right"
             onClick={() => scrollToSection('qualifications')}
           >
-            Experience & Qualifications
+            {"Experience &\nQualifications"}
           </button>
         </div>
       </div>

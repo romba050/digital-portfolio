@@ -11,23 +11,50 @@
   width: 100%;
 }
 
-.section-title {
-  display: inline-flex;
+.section-header {
+  display: flex;
   align-items: center;
-  background: #FF6B00;
-  border-radius: 999px;
-  height: 40px;
-  overflow: hidden;
-  position: relative;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  display: inline-block;
+  background: #f87a21;
   font-family: 'Barlow Condensed', Arial, sans-serif;
-  font-size: 15px;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #0F0F0F;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 0 24px;
-  white-space: nowrap;
-  margin-bottom: 3rem;
+  padding: 16px 32px;
+  margin-bottom: 0;
+  border-radius: 8px;
+}
+
+.back-to-nav-btn {
+  background: #49D9FE;
+  border: none;
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.back-to-nav-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+.back-to-nav-btn svg {
+  width: 24px;
+  height: 24px;
 }
 
 /* Projects Section */
@@ -45,12 +72,19 @@
   border: 1px solid rgba(15, 15, 15, 0.1);
   border-radius: 8px;
   transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .project-card:hover {
   background: rgba(15, 15, 15, 0.05);
   border-color: rgba(15, 15, 15, 0.2);
   transform: translateX(5px);
+}
+
+.project-card:visited {
+  color: inherit;
 }
 
 .project-marker {

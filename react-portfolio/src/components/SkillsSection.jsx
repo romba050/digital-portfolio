@@ -1,6 +1,13 @@
 import './Section.css';
 
 function SkillsSection() {
+  const scrollToNavigation = () => {
+    const heroSection = document.querySelector('.hero-section');
+    if (heroSection) {
+      heroSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const skills = [
     {
       category: "Programming",
@@ -27,7 +34,14 @@ function SkillsSection() {
   return (
     <section id="skills" className="section common-section">
       <div className="section-container">
-        <h2 className="section-title">Skills</h2>
+        <div className="section-header">
+          <h2 className="section-title">Skills</h2>
+          <button className="back-to-nav-btn" onClick={scrollToNavigation} aria-label="Back to navigation">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </button>
+        </div>
         <div className="skills-grid">
           {skills.map((skill, index) => (
             <div key={index} className="skill-card">

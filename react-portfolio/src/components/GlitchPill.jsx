@@ -1,41 +1,29 @@
-import { useEffect, useRef } from 'react';
-
-const GLITCH_ROWS = [
-  [{ w: 8, opacity: 0.85 }, { w: 13, opacity: 0.5 }],
-  [{ w: 16, opacity: 1 },   { w: 6,  opacity: 0.6 }],
-  [{ w: 10, opacity: 0.4 }, { w: 7,  opacity: 0.75 }],
-];
-
 function GlitchPill() {
-  const scatterRef = useRef(null);
-
-  useEffect(() => {
-    if (!scatterRef.current) return;
-
-    const scatter = scatterRef.current;
-    scatter.innerHTML = '';
-
-    GLITCH_ROWS.forEach(cols => {
-      const row = document.createElement('div');
-      row.className = 'pill-glitch-scatter-row';
-      cols.forEach(({ w, opacity }) => {
-        const cell = document.createElement('span');
-        cell.style.width = w + 'px';
-        cell.style.opacity = opacity;
-        row.appendChild(cell);
-      });
-      scatter.appendChild(row);
-    });
-  }, []);
-
   return (
     <div className="pill">
-      <div className="pill-glitch">
-        <span style={{width:'11px'}}></span>
-        <span style={{width:'6px', marginRight:'2px', opacity:0.7}}></span>
-        <span style={{width:'9px'}}></span>
+      <div className="pill-icon">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          {/* DNA double helix */}
+          {/* Left strand */}
+          <path d="M8 4 Q12 8 8 12 Q4 16 8 20 Q12 24 8 28" stroke="#0F0F0F" strokeWidth="2" fill="none"/>
+          {/* Right strand */}
+          <path d="M24 4 Q20 8 24 12 Q28 16 24 20 Q20 24 24 28" stroke="#0F0F0F" strokeWidth="2" fill="none"/>
+          {/* Connecting bars */}
+          <line x1="8" y1="6" x2="24" y2="6" stroke="#0F0F0F" strokeWidth="1.5"/>
+          <line x1="8" y1="10" x2="24" y2="10" stroke="#0F0F0F" strokeWidth="1.5"/>
+          <line x1="8" y1="14" x2="24" y2="14" stroke="#0F0F0F" strokeWidth="1.5"/>
+          <line x1="8" y1="18" x2="24" y2="18" stroke="#0F0F0F" strokeWidth="1.5"/>
+          <line x1="8" y1="22" x2="24" y2="22" stroke="#0F0F0F" strokeWidth="1.5"/>
+          <line x1="8" y1="26" x2="24" y2="26" stroke="#0F0F0F" strokeWidth="1.5"/>
+          {/* Base pairs (dots) */}
+          <circle cx="8" cy="6" r="2" fill="#0F0F0F"/>
+          <circle cx="24" cy="6" r="2" fill="#0F0F0F"/>
+          <circle cx="8" cy="14" r="2" fill="#0F0F0F"/>
+          <circle cx="24" cy="14" r="2" fill="#0F0F0F"/>
+          <circle cx="8" cy="22" r="2" fill="#0F0F0F"/>
+          <circle cx="24" cy="22" r="2" fill="#0F0F0F"/>
+        </svg>
       </div>
-      <div ref={scatterRef} className="pill-glitch-scatter"></div>
       <div className="pill-text">MSc Bioinformatics</div>
     </div>
   );
