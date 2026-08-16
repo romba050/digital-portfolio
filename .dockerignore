@@ -1,0 +1,4 @@
+# Only the build output and the container config enter the image.
+*
+!dist
+!docker
