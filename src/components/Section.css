@@ -20,7 +20,7 @@
 
 .section-title {
   display: inline-block;
-  background: #f87a21;
+  background: #19B33D;
   font-family: 'Barlow Condensed', Arial, sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
@@ -33,7 +33,7 @@
 }
 
 .back-to-nav-btn {
-  background: #49D9FE;
+  background: #0F0F0F;
   border: none;
   border-radius: 8px;
   width: 48px;

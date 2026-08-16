@@ -30,6 +30,11 @@ function ProjectsSection() {
       url: "https://basile-rommes.com/hand-written-digits"
     },
     {
+      title: "Landcover segmentation satellite imaging Luxembourg",
+      description: "",
+      url: "https://basile-rommes.com/landcover/"
+    },
+    {
       title: "Spotle Assist Project",
       description: "The smart assistant to the Spotle artist guessing game",
       url: "https://basile-rommes.com/spotle/"

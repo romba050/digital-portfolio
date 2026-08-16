@@ -1,4 +1,4 @@
-import Star from './Star';
+import DnaMolecule from './DnaMolecule';
 
 function NetworkSection() {
   const scrollToSection = (sectionId) => {
@@ -24,7 +24,7 @@ function NetworkSection() {
           >
             Work Experience
           </button>
-          <Star />
+          <DnaMolecule />
           <button
             className="nav-header nav-bottom-left"
             onClick={() => scrollToSection('skills')}

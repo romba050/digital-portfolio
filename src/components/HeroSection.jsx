@@ -1,27 +1,12 @@
-import Barcode from './Barcode';
 // import VertBarcode from './VertBarcode';
 import GlitchPill from './GlitchPill';
-import Star from './Star';
+import SocialLinks from './SocialLinks';
+import YuruyurauSketch from './YuruyurauSketch';
 
 function HeroSection() {
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section className="section hero-section">
       <div className="upper">
-        <div className="top-bar">
-          <div className="stamp">CV</div>
-          <div className="meta-label">Personal Portfolio</div>
-          <Barcode />
-        </div>
-
-        <div className="divider-line"></div>
-
         <div className="content-row">
           <div className="left-content">
             <div className="logotype">BASILE<br/>ROMMES</div>
@@ -29,17 +14,15 @@ function HeroSection() {
             <GlitchPill />
 
             <div className="subtext">
-              <span>basilerommes@hotmail.com</span>
+              <span><a href="mailto:basilerommes@hotmail.com">basilerommes@hotmail.com</a></span>
               <span>Stockholm, Sweden</span>
             </div>
+
+            <SocialLinks containerClass="hero-icons" iconClass="hero-icon" />
           </div>
 
           <div className="right-content">
-            <div className="find-me-section">
-              <div className="find-me">Find me</div>
-              <a className="pill-link" href="https://linkedin.com/in/basile-rommes" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <a className="pill-link" href="https://github.com/romba050" target="_blank" rel="noopener noreferrer">Github</a>
-            </div>
+            <YuruyurauSketch size={480} />
           </div>
         </div>
 
@@ -64,37 +47,6 @@ function HeroSection() {
       </div>
 
       {/* <div className="h-separator"></div> */}
-
-      {/* Star navigation section - black box */}
-      <div className="star-navigation-box">
-        <div className="star-wrap">
-          <button
-            className="nav-header nav-top-left"
-            onClick={() => scrollToSection('projects')}
-          >
-            {"Projects &\nWebApps"}
-          </button>
-          <button
-            className="nav-header nav-top-right"
-            onClick={() => scrollToSection('work-experience')}
-          >
-            {"Work\nExperience"}
-          </button>
-          <Star />
-          <button
-            className="nav-header nav-bottom-left"
-            onClick={() => scrollToSection('skills')}
-          >
-            Skills
-          </button>
-          <button
-            className="nav-header nav-bottom-right"
-            onClick={() => scrollToSection('qualifications')}
-          >
-            {"Experience &\nQualifications"}
-          </button>
-        </div>
-      </div>
     </section>
   );
 }
